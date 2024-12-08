@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Management</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'login' %}">Đăng nhập</a>
+        <a href="{% url 'register' %}">Đăng ký</a>
+        <a href="{% url 'logout' %}">Đăng xuất</a>
+        <a href="{% url 'profile' %}">Trang cá nhân</a>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
